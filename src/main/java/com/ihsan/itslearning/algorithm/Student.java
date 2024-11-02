@@ -1,6 +1,8 @@
 package com.ihsan.itslearning.algorithm;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Student {
 	private String name;
@@ -8,7 +10,11 @@ public class Student {
 	private double GPA;
 	private String department;
 	
-	public ArrayList<Course> courseList = new ArrayList<>();
+	public List<Course> courseList = new ArrayList<>();
+
+	public void setCourseList(List<Course> courseList) {
+		this.courseList = courseList;
+	}
 	
 	public Student () {
 		
@@ -72,6 +78,27 @@ public class Student {
 		double result = totalPoints / totalCredits;
 		return result;	
 		
+	}
+
+	public static void main(){
+		Course c = new Course();
+		c.setName("math");
+		c.setCredit(10);
+		c.setGrade("B");
+
+		Student s1 = new Student();
+		s1.setID(1);
+		s1.setName("ihsan");
+		s1.setGPA(3.5);
+		s1.setDepartment("IT");
+
+		s1.setCourseList(List.of(c));
+
+		var a = s1.calculateGPA();
+		System.out.println("calculated value:" + a);
+		System.out.println(s1.toString());
+
+
 	}
 	
 	
