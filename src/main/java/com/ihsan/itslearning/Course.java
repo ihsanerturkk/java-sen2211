@@ -39,6 +39,10 @@ public class Course {
         this.credit = credit;
     }
 
+    /**
+     * Calculate Grade from grade(A, B, C, D ..)
+     * @return grade-point like 3.67
+     */
     public double calculateGrade() {
         //return 4;
         //grade --> F
