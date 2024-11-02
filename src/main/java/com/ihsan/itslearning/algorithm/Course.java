@@ -1,3 +1,4 @@
+package com.ihsan.itslearning.algorithm;
 
 public class Course {
     private String name;

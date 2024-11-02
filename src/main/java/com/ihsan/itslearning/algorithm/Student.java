@@ -1,3 +1,5 @@
+package com.ihsan.itslearning.algorithm;
+
 import java.util.ArrayList;
 
 public class Student {

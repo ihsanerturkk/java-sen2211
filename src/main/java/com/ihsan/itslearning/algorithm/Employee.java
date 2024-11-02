@@ -1,3 +1,4 @@
+package com.ihsan.itslearning.algorithm;
 
 public class Employee {
 	
@@ -23,7 +24,7 @@ public class Employee {
 		emp1.setName("Can");
 		System.out.println(emp1.getName());
 		
-		Employee emp2 = new Employee("Ayþe", 999, 666);
+		Employee emp2 = new Employee("Ayï¿½e", 999, 666);
 		System.out.println(emp2.getSalary());
 		
 	}
