@@ -40,28 +40,23 @@ public class Course {
     }
 
     public double calculateGrade() {
-        double gradePoint = 0;
-        if (grade.equals("A"))
-            //return 4;
-            gradePoint = 4;
-        else if (grade.equals("A-"))
-            gradePoint = 3.67;
-        else if (grade.equals("B+"))
-            gradePoint = 3.33;
-        else if (grade.equals("B"))
-            gradePoint = 3;
-        else if (grade.equals("B-"))
-            gradePoint = 2.67;
-        else if (grade.equals("C+"))
-            gradePoint = 2.33;
-        else if (grade.equals("C"))
-            gradePoint = 2;
-        else if (grade.equals("D"))
-            gradePoint = 1;
-        else
-            //grade --> F
-            gradePoint = 0;
-        return gradePoint;
+        //return 4;
+        //grade --> F
+        return switch (grade) {
+            case "A" ->
+                //return 4;
+                    4;
+            case "A-" -> 3.67;
+            case "B+" -> 3.33;
+            case "B" -> 3;
+            case "B-" -> 2.67;
+            case "C+" -> 2.33;
+            case "C" -> 2;
+            case "D" -> 1;
+            default ->
+                //grade --> F
+                    0;
+        };
     }
 
 
